@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pth
+.env
+env/
+venv/
+.venv/
+*.log
+runs/
+*.pt 
+//.pt -> model ağırlıkları = maliyet
+.DS_Store
