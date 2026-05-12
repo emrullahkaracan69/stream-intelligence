@@ -8,5 +8,6 @@ venv/
 *.log
 runs/
 *.pt 
-//.pt -> model ağırlıkları = maliyet
-.DS_Store
+# pt -> model weights — big files dont add in repo
+.DS_Store 
+# for mac
