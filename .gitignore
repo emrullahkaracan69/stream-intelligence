@@ -11,3 +11,5 @@ runs/
 # pt -> model weights — big files dont add in repo
 .DS_Store 
 # for mac
+logs/*.log
+logs/*.log.*
