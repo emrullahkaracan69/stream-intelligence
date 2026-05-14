@@ -1,6 +1,5 @@
 import logging
 import logging.config
-from pathlib import Path
 
 from src.config import config
 
