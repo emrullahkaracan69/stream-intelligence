@@ -29,5 +29,5 @@ def test_camera_raises_on_invalid_index():
         mock_cap_class.return_value = mock_cap
 
         with pytest.raises(RuntimeError):
-            with CameraSource(99) as cam:
+            with CameraSource(99) as _:
                 pass
