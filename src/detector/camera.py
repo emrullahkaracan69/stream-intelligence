@@ -5,6 +5,7 @@ import cv2
 
 logger = logging.getLogger(__name__)
 
+
 class CameraSource:
     def __init__(self, index):
         self.index = index
@@ -12,7 +13,6 @@ class CameraSource:
         self.frame_count = 0
         self.start_time = None
 
-    
     def __enter__(self):
         """Open the camera and initialise frame timing.
 
@@ -38,14 +38,12 @@ class CameraSource:
 
         return self
 
-
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Release the camera resource on exit."""
         if self.cap is not None and self.cap.isOpened():
             self.cap.release()
             logger.info("Camera %d released", self.index)
-            
-    
+
     def read_frame(self):
         """Read a single frame and return it with current FPS.
 
@@ -64,5 +62,3 @@ class CameraSource:
         fps = self.frame_count / (time.time() - self.start_time)
 
         return ret, frame, fps
-
-        

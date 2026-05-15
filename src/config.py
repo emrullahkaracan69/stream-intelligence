@@ -5,6 +5,7 @@ import os
 
 load_dotenv()
 
+
 # dataclass = decorator (with this there is no need to add init)
 @dataclass
 class Config:
