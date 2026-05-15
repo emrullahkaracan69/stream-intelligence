@@ -26,5 +26,8 @@ class Config:
     log_level: str = os.getenv("LOG_LEVEL", "INFO")
     log_dir: Path = Path(os.getenv("LOG_DIR", "logs"))
 
+    # Model (YOLO)
+    model_path: str = os.getenv("MODEL_PATH", "weights/yolov8n.pt")
+
 
 config = Config()

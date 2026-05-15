@@ -28,7 +28,7 @@ class YoloDetector:
 
     TRACKED_CLASSES = {"person", "car", "truck", "bus", "motorcycle"}
 
-    def __init__(self, model_path: str = "weights/yolov8n.pt") -> None:
+    def __init__(self, model_path: str = config.model_path) -> None:
         """Initialise YOLOv8 detector and load model onto device.
 
         Args:
