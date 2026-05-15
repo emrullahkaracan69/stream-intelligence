@@ -13,3 +13,4 @@ runs/
 # for mac
 logs/*.log
 logs/*.log.*
+weights/*.pt
